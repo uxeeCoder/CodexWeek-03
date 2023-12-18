@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap-Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container-fluid" style="background-color: rgb(250, 226, 93)">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The News Channel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="international.html">International</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sports.html">sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="politics.html">Politics</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="page3.html">Showbiz</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="page3.html"
+                    >Science & Tehnology</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="bg-warning p-2 text-white">World News</h1>
+
+    <div class="dropdown ms-2 mt-3 mb-3">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        External Links
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="Live-news.html">Live News</a></li>
+        <li>
+          <a class="dropdown-item" href="international.html">International</a>
+        </li>
+        <li><a class="dropdown-item" href="local.html">Local News</a></li>
+      </ul>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&q=80&w=200&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="clouds"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Weather</h5>
+                <p class="card-text">Find detailed weather report here</p>
+                <div class="badge bg-warning align-self-center">
+                  <a href="weather.html"> Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?auto=format&fit=crop&q=80&w=180&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Image 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">international</h5>
+                <p class="card-text">Detailed International news headlines</p>
+                <div class="badge bg-warning align-self-center">
+                  <a href="international.html"> Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=200&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Image 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">sports</h5>
+                <p class="card-text">Sports updates from around the world</p>
+                <div class="badge bg-warning align-self-center">
+                  <a href="sports.html"> Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div>
+      <div class="btn-group m-2" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-warning">Previous Page</button>
+        <button type="button" class="btn btn-warning">Current</button>
+        <button type="button" class="btn btn-warning">Next Page</button>
+      </div>
+    </div>
+
+    <footer
+      style="
+        background-color: rgb(243, 185, 113);
+        border-color: black;
+        box-shadow: 2px 2px 3px;
+      "
+    >
+      <p>&copy; 2023 Copyright. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>

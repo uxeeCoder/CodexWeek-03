@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="page3.html" />
+    <link rel="stylesheet" href="page4.html" />
+    <title>Page2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container bg2">
+    <nav class="mt-5" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"></a>Home</li>
+        <li class="breadcrumb-item active" aria-current="page">Services</li>
+      </ol>
+      <h1>Our Services</h1>
+
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title=" we Proudly offer these services "
+      >
+        Our Services
+      </button>
+
+      <main class="row">
+        <div class="container col-12 col-md-4 mb-4">
+          <div
+            class="card"
+            style="max-height: fit-content; max-width: fit-content"
+          >
+            <div class="d-flex flex-column flex-md-row">
+              <!-- image wrapper -->
+              <div class="w-100" style="height: 250px">
+                <img
+                  class="object-fit-cover h-100 w-100"
+                  src="https://source.unsplash.com/random/? travel"
+                  alt="Image"
+                />
+              </div>
+              <!-- Text wrapper -->
+              <div style="background-color: rgb(97, 170, 154)">
+                <h5 style="margin-left: 10px; margin-top: 10px">
+                  World Class Travel Services
+                </h5>
+                <p style="text-align: justify; color: aliceblue; padding: 10px">
+                  We offer world class travel services and we are proud to say
+                  that we are the best in our field.
+                </p>
+                <p class="card-text">
+                  <small
+                    class="text-muted"
+                    style="font-style: italic; margin-left: 10px"
+                  >
+                    Inquire for Travel Packages</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container col-12 col-md-6 mb-4">
+          <div
+            class="card"
+            style="max-height: fit-content; max-width: fit-content"
+          >
+            <div class="d-flex flex-column flex-md-row">
+              <!-- image wrapper -->
+              <div class="w-100" style="height: 250px">
+                <img
+                  class="object-fit-cover h-100 w-100"
+                  src="https://source.unsplash.com/random/? hotel"
+                  alt="Image"
+                />
+              </div>
+              <!-- Text wrapper -->
+              <div style="background-color: rgb(97, 170, 154)">
+                <h5 style="margin-left: 10px; margin-top: 10px">Our Hotels</h5>
+                <p style="text-align: justify; color: aliceblue; padding: 10px">
+                  We offer world class travel services and we are proud to say
+                  that we are the best in our field.
+                </p>
+                <p class="card-text">
+                  <small
+                    class="text-muted"
+                    style="font-style: italic; margin-left: 10px"
+                  >
+                    Book a Hotel</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <nav aria-label="Services">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="index.html"> Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="index.html">1</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="page3.html">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="page4.html">4</a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link" href="page3.html"> Next</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
